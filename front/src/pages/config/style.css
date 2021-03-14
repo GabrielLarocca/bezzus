@@ -1,0 +1,41 @@
+#config .carder {
+  display: flex;
+  justify-content: center;
+}
+
+#config .carded {
+  background-color: #fff;
+  margin-left: 40px;
+}
+
+#config .centerForm {
+  display: flex;
+  justify-content: center;
+}
+
+#config .btnPadrao {
+  border: 2px solid black;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+}
+
+#config .btnPadrao:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 1410px) {
+  #config .showroom {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  #config .carded {
+    margin-left: 0px;
+  }
+}

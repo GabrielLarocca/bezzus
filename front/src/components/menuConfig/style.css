@@ -1,0 +1,29 @@
+#config .activedCard {
+  background-color: #7d7d7d21 !important;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#config .card {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #ffff;
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 0px;
+}
+
+#config .card-title {
+  margin-bottom: 0px;
+}
+
+#config .card-header {
+  margin-bottom: 0px;
+  background-color: #ffff;
+  border-bottom: none;
+}
+
+#config .card-body {
+  background-color: #ffff;
+  font-weight: 300;
+  padding-top: 5px;
+}

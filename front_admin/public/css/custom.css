@@ -1,0 +1,69 @@
+/*  Padrões  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6f6f8;
+}
+
+/* NavBar */
+
+.produtos .list-group {
+  cursor: pointer;
+}
+
+.produtos .list-group li:hover {
+  background-color: #ccc;
+}
+
+/* Login */
+
+.login {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.login form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.login p > a {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fotoperfil {
+  border-radius: 5px;
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b2b2b3;
+}

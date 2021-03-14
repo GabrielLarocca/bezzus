@@ -1,0 +1,70 @@
+#shop .card {
+  width: 18rem;
+  background-color: #e5e5e5;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#shop .card-title {
+  margin-bottom: 0px;
+}
+
+#shop .card-body {
+  background-color: #e5e5e5;
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+#shop .showroom {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#shop .carder {
+  display: flex;
+  justify-content: center;
+}
+
+#shop .color {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+#shop .brands {
+  padding: 20px;
+}
+
+#shop .color:hover {
+  opacity: 50%;
+}
+
+#shop .color.a {
+  background-color: black;
+}
+#shop .color.b {
+  background-color: white;
+}
+#shop .color.c {
+  background-color: rgb(255, 0, 0);
+}
+#shop .color.d {
+  background-color: green;
+}
+#shop .color.e {
+  background-color: blue;
+}
+
+#shop .textPrice {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+@media (max-width: 1410px) {
+  #shop .showroom {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

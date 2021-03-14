@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.Toastify__toast--error {
+  background-color: rgba(247, 20, 20, 0.479) !important;
+  color: white !important;
+  text-align: center !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b9b3b3;
+}

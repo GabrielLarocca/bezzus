@@ -1,0 +1,35 @@
+#news h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+#news .notesNews {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+#news .noteTitulo {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  #news .imgNews {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 1350px) {
+  #news .notesNews {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #news .notesNews {
+    padding: 0px;
+  }
+}

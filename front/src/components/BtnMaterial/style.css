@@ -1,0 +1,46 @@
+#btnRipple {
+  outline: 0 !important;
+  text-transform:lowercase;
+  transition: background 0.3s;
+  /* Importantes	 */
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+#btnRipple:hover {
+  background-color: var(--cor-principal-escura);
+}
+
+.onda {
+  --topo: 0;
+  --esquerda: 0;
+  --scale: 0;
+  --opacity: 0;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  display: block;
+  /* Reset de posições */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Importantes */
+  will-change: transform !important;
+  transform: translateX(var(--esquerda)) translateY(var(--topo)) !important;
+}
+
+.onda:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  /* Importantes */
+  will-change: transform;
+  transform: scale(var(--scale));
+  opacity: var(--opacity);
+  transition: transform 0.5s, opacity 0.3s;
+}
