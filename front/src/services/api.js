@@ -1,5 +1,6 @@
 import axios from "axios";
 import { getToken } from "./auth";
+import Nprogress from "nprogress";
 
 const api = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
@@ -7,6 +8,7 @@ const api = axios.create({
 
 api.interceptors.request.use(async (config) => {
   const token = getToken();
+  Nprogress.start();
   if (token) {
     config.headers.Authorization = `${token}`;
   }
@@ -15,6 +17,7 @@ api.interceptors.request.use(async (config) => {
 
 api.interceptors.response.use(
   async function (response) {
+    Nprogress.done();
     if (response.data && response.data.login) {
       window.location.href = "/login";
     } else {
